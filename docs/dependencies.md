@@ -9,6 +9,7 @@ Directly selected packages and their purposes:
 - `matplotlib`, `seaborn`: analysis plots.
 - `streamlit`: local dashboard.
 - `requests`: local acquisition utilities; Lambda API access uses `urllib` instead.
+- `certifi`: pinned public CA roots for HTTPS verification in the local Python runtime.
 - `joblib`: local model tooling.
 - `pytest`: tests.
 - `ruff`: formatting and linting.
