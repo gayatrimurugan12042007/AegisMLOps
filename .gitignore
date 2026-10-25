@@ -1,0 +1,46 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+credentials
+secrets/
+
+# Local data and model artifacts
+data/
+models/
+*.joblib
+*.pkl
+*.pickle
+*.parquet
+*.feather
+*.npy
+*.npz
+*.csv
+*.jsonl
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+.coverage
+htmlcov/
+
+# Notebook and editor noise
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/
+
+# Build outputs
+build/
+dist/
+*.egg-info/
+*.zip
