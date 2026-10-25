@@ -3,21 +3,21 @@ repos:
     hooks:
       - id: detect-secrets
         name: detect-secrets
-        entry: detect-secrets-hook --baseline .secrets.baseline
+        entry: .venv/bin/detect-secrets-hook --baseline .secrets.baseline
         language: system
         pass_filenames: true
       - id: check-yaml
         name: check-yaml
-        entry: check-yaml
+        entry: .venv/bin/check-yaml
         language: system
         types: [yaml]
       - id: end-of-file-fixer
         name: end-of-file-fixer
-        entry: end-of-file-fixer
+        entry: .venv/bin/end-of-file-fixer
         language: system
         types: [text]
       - id: trailing-whitespace
         name: trailing-whitespace
-        entry: trailing-whitespace-fixer
+        entry: .venv/bin/trailing-whitespace-fixer
         language: system
         types: [text]
