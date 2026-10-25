@@ -1,46 +1,55 @@
-# Secrets and local configuration
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
 .streamlit/secrets.toml
-*.pem
-*.key
-credentials
-secrets/
+.pypirc
 
-# Local data and model artifacts
-data/
-models/
-*.joblib
-*.pkl
-*.pickle
-*.parquet
-*.feather
-*.npy
-*.npz
-*.csv
-*.jsonl
-
-# Python environments and caches
-.venv/
-venv/
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+wheels/
 .pytest_cache/
-.ruff_cache/
 .mypy_cache/
-.cache/
+.ruff_cache/
 .coverage
 htmlcov/
 
-# Notebook and editor noise
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
 .ipynb_checkpoints/
+
+# macOS
 .DS_Store
+
+# IDEs
 .idea/
 .vscode/
 
-# Build outputs
-build/
-dist/
-*.egg-info/
-*.zip
+# Model artifacts and datasets
+*.joblib
+*.pkl
+*.pickle
+data/
+models/
+
+# Logs and temporary files
+*.log
+tempCodeRunnerFile.py
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Marimo
+marimo/_static/
+marimo/_lsp/
+__marimo__/
